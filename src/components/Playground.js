@@ -9,7 +9,6 @@ function Playground() {
   const [add3Carts, setAdd3Carts] = useState(false);
   const add3CartsIsActive = useRef(false);
 
-
   const restartGameHandler = () => {
     setRestart((prevState) => {
       return !prevState;
@@ -30,12 +29,13 @@ function Playground() {
         setRestart={setRestart}
         add3Carts={add3Carts}
         add3CartsIsActive={add3CartsIsActive}
-        
       />
-      <button onClick={restartGameHandler}>restart</button>
-      <button value={true} onClick={add3CartsHandler}>
-        add 3 carts
-      </button>
+      <div className={styles.controls}>
+        <button onClick={restartGameHandler}>restart</button>
+        <button value={true} onClick={add3CartsHandler}>
+          add 3 carts
+        </button>
+      </div>
     </div>
   );
 }

@@ -9,3 +9,30 @@
 
 }
 
+.controls{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.controls button{
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #40c057 ;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 1.6rem 3.6rem;
+  border-radius: 100px;
+  transition: all 300ms;
+}
+
+.controls button:hover {
+  background-color: #37b24d;
+}
+.controls button:active {
+  box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0.4rem);
+
+}
+
